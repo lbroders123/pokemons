@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Fetch Pokemons</title>
+        <link rel="stylesheet" href="pokemon.css" />
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+
+        
+    </head>
+    <body>
+        <h1>Pokemons</h1>
+        
+        <button onclick="fetchPokemons()">Show Pokemons</button>
+
+        <div class="container">
+            <div class="wrap">
+                <input 
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="search for a pokemon"
+                />
+            </div>
+            <ul id="pokedex"></ul>
+        </div>
+        <script src="pokemon.js"></script>
+
+        <div class="pagination">
+            <a onclick="fetchPokemons()">&laquo;</a>
+            <a onclick="fetchPokemons()">1</a>
+            <a onclick="fetchPokemons2()">2</a>
+            <a onclick="fetchPokemons2()">&raquo;</a>
+          </div>
+
+    </body>
+</html>
